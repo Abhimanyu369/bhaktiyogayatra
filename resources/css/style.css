@@ -200,7 +200,7 @@ header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 100vh;
     background-attachment: fixed;
 }
@@ -216,10 +216,10 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 250px;
     float: left;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .logo-black {
@@ -228,6 +228,10 @@ header {
     width: auto;
     float: left;
     margin: 5px 0;
+}
+
+.nav-text {
+  display: none;
 }
 
 /* Main navi */
@@ -285,7 +289,7 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav { margin-top: 18px; }
+.sticky .main-nav { margin-top: 0px; align-self: center; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -295,6 +299,20 @@ header {
 
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
+
+.sticky .nav-text { display: block;}
+
+.sticky .row {
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky .nav-text {
+    align-self: center;
+    width: 200px;
+    height: auto;
+}
 
 /* ----------------------------------------------- */
 /* FEATURES */
