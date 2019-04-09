@@ -196,13 +196,23 @@ input[type=submit]:active {
 /* HEADER */
 /* ----------------------------------------------- */
 
-header {
+header, .tour-header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
     background-size: cover;
     background-position: top;
-    height: 100vh;
     background-attachment: fixed;
+}
+
+header {
+  height: 100vh;
+}
+
+.tour-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/yoga-background.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-text-box {
@@ -710,4 +720,45 @@ footer p {
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
+}
+
+/* ----------------------------------------------- */
+/* Tours Page */
+/* ----------------------------------------------- */
+
+.hero-text-box-tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+/* ----------------------------------------------- */
+/* Collapsible CSS */
+/* ----------------------------------------------- */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
