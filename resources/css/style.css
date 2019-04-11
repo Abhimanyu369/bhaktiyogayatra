@@ -209,10 +209,11 @@ header {
 }
 
 .tour-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/yoga-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tour-bg.jpg);
   height: 50vh;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hero-text-box {
@@ -738,27 +739,69 @@ footer p {
 /* ----------------------------------------------- */
 /* Collapsible CSS */
 /* ----------------------------------------------- */
+.wrapper{
+  width:70%;
+}
+@media(max-width:992px){
+ .wrapper{
+  width:100%;
+}
+}
+.panel-heading {
+  padding: 0;
+    border:0;
+}
+.panel-title>a, .panel-title>a:active{
+    display:block;
+    padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  word-spacing:3px;
+    text-decoration:none;
+}
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 
-.collapsible {
-  background-color: #777;
+
+.w3-container {
+    border-radius: 0 0 5px 5px;
+}
+
+.w3-bar {
+    border-radius: 5px 5px 0 0;
+}
+
+.w3-black {
+    color: #333!important;
+    background-color: #fff!important;
+}
+
+.w3-red, .w3-hover-red:hover {
+    color: #fff!important;
+    background-color: #e67e22!important;
+}
+
+.center-tx {
+  text-align: center;
   color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+.tour-detail-bg {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/yoga-background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/yoga-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/yoga-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
