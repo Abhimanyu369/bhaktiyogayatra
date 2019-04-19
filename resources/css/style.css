@@ -813,6 +813,18 @@ footer p {
 
 .panel-heading a {
     border-bottom: none;
+    color: #555;
+}
+
+.panel-title {
+  padding: 15px 15px 15px 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.panel-heading a:before {
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 .panel-sub-title {
