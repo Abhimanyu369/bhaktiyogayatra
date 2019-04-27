@@ -841,3 +841,25 @@ footer p {
 .taxi-booking, .tour-booking {
   text-align: center;
 }
+
+.sub-menu {
+  position: relative;
+}
+
+.sub-menu ul {
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.sub-menu:hover ul {
+    display: block;
+}
+
+.sub-menu ul li {
+  display: block;
+  width: 200px;
+  padding: 16px 0;
+  margin-left: 0;
+  margin-top: 16px;
+}
