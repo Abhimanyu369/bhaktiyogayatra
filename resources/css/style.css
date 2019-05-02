@@ -907,6 +907,10 @@ footer p {
   margin-right: 0px!important;
 }
 
+.option-list-item .active {
+  background-color: #ca6d1b;
+}
+
 .details {
   width: 80%;
 }
