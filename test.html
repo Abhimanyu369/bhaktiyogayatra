@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/w3.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Bhakti Yoga Yatra</title>
+    </head>
+    <body>
+        <header class="tour-header">
+            <nav class="sticky">
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="logo" class="logo">
+                    <img src="resources/img/logo.png" alt="logo" class="logo-black">
+                    <img class="nav-text" src="resources/img/Bhakti Yoga Text.png" alt="text">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">News</a></li>
+                        <li><a href="#works">Tours</a></li>
+                        <li><a href="#cities">Contacts</a></li>
+                        <li><a href="#plans">Booking</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box-tour">
+                <h1>Tour Name</h1>
+                <!--<a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>-->
+            </div>
+
+        </header>
+
+        <section class="tours-details section-plans">
+            <div class="row">
+                <h2>Yoga Tours</h2>
+            </div>
+            <div class="row w3-container border-radius-5">
+              <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Itinirary</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Other Details</button>
+              </div>
+
+              <div id="London" class="w3-container w3-border city tour-detail-bg">
+                <h3 class="center-tx">Itenirary</h3>
+                <div class="wrapper center-block">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading active" role="tab" id="headingOne">
+
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="panel-title">
+                            Daily
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <ul>
+                          <li>Yoga, pranayama, Meditation</li>
+                          <li>7am Breakfast (optional kirtan)</li>
+                          <li>9am Lunch Ipm Dinner</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <h4 class="panel-title">
+                            Day1
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul>
+                          <li>Arrive at ashram, dinner, settle in, good night!</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <h4 class="panel-title">
+                            Day2
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul>
+                          <li>10am Exchange of money</li>
+                          <li>10:30am Jiva Orientation (where to practice yoga, library, classroom, dining room, Jiva Ayurvedic Clinic, massages, temple)</li>
+                          <li>5:00pm Iskon</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <h4 class="panel-title">
+                            Day3
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <ul>
+                          <li>Visit Village with Snake Charmer</li>
+                          <li>6pm Bhagavad Gita lecture with Babaji</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <h4 class="panel-title">
+                            Day4
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <ul>
+                          <li>10am - Cow Sanctuary and School for Girls</li>
+                          <li>3pm - Boat trip to Yamuna River</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <h4 class="panel-title">
+                            Day5
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                        <ul>
+                          <li>6pm - Bhagavad Gita Lecture with Babaji</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          <h4 class="panel-title">
+                            Day6
+                          </h4>
+                          <p class="panel-sub-title">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                      <div class="panel-body">
+                        <ul>
+                          <li>6am - Taj Mahal [Breakfast included]</li>
+                          <li>6pm - Bhagavad Gita Lecture with Babaji</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingEight">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          <h4 class="panel-title">
+                            Day7
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                      <div class="panel-body">
+                        <ul>
+                          <li>10am - Visit Krishna Temple Mathura, Goverdhan, Kusum Sarovar</li>
+                          <li>6pm - Bhagavad Gita Lecture with Babaji</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingNine">
+
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          <h4 class="panel-title">
+                            Day8
+                          </h4>
+                          <p class="panel-sub-title">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aspernatur.
+                          </p>
+                        </a>
+
+
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                      <div class="panel-body">
+                        <ul>
+                          <li>10am - Parikrama ( walk around ) Vrindavan & Temples, Nareem karoli Baba Temple</li>
+                          <li>1pm - Lunch at MVT ISKCON</li>
+                          <li>Afternoon Shopping</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div id="Paris" class="w3-container w3-border city tour-detail-bg" style="display:none">
+                <h3>Contains Other details</h3>
+              </div>
+
+            </div>
+            <div class="adi">hey adi</div>
+            <div class="d_wrapper">
+              <div class="d_options">
+                <ul class="option-list">
+                  <li class="option-list-item"><a class="option-list-link active" href="#detail_1">Description</a></li>
+                  <li class="option-list-item"><a class="option-list-link" href="#detail_2">Itinerary</a></li>
+                  <li class="option-list-item"><a class="option-list-link" href="#detail_3">Media</a></li>
+                  <li class="option-list-item"><a class="option-list-link" href="#detail_4">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <div class="details">
+                <div class="detail-box" id="detail_1">
+                  <h1>Description</h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas, quia voluptas sed vel, nemo veritatis earum exercitationem maiores expedita.
+                </div>
+                <div class="detail-box" id="detail_2">
+                  <h1>Itinerary</h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum reprehenderit consequuntur impedit, sapiente nobis porro sint quidem cupiditate dolorum aliquid?
+                </div>
+                <div class="detail-box" id="detail_3">
+                  <h1>Media</h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum assumenda ipsam excepturi placeat nobis illo aliquam magni accusamus id.
+                </div>
+                <div class="detail-box" id="detail_4">
+                  <h1>Terms & Conditions</h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quae maxime velit rem ex quia dolore perspiciatis, alias? Numquam, beatae.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    This webpage was created for the course "Design and Develop a Killer Website Using HTML5 and CSS3" by Jonas Schmedtmann. No copyrights here.<br>
+                    This webpage is for you! So go and do whatever you want with it and have fun.
+                </p>
+                <p>
+                    Copyright 2019 - Bhakti Yoga Yatra
+                </p>
+            </div>
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <!--<script src="vendors/js/jquery.waypoints.min.js"></script>-->
+    <!--<script src="resources/js/script.js"></script>-->
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+      }
+    </script>
+    <script>
+        $(document).ready(function() {
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+          }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.panel-collapse').on('show.bs.collapse', function () {
+                $(this).siblings('.panel-heading').addClass('active');
+              });
+
+              $('.panel-collapse').on('hide.bs.collapse', function () {
+                $(this).siblings('.panel-heading').removeClass('active');
+              });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $( "a.option-list-link" ).click(function( event ) {
+              event.preventDefault();
+              $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+              $(this).addClass("active");
+              $(this).parent().siblings().children().removeClass("active");
+          });
+      });
+      </script>
+
+    </body>
+
+</html>
