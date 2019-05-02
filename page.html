@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/w3.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/lightgallery.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
@@ -281,7 +282,17 @@
                 </div>
                 <div class="detail-box" id="detail_3">
                   <h3>Media</h3>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum assumenda ipsam excepturi placeat nobis illo aliquam magni accusamus id.
+                  <div id="lightgallery">
+                    <a href="resources/img/img_1.jpg">
+                        <img src="resources/img/thumb_1.jpg" />
+                    </a>
+                    <a href="resources/img/img_2.jpg">
+                        <img src="resources/img/thumb_2.jpg" />
+                    </a>
+                    <a href="resources/img/img_3.jpg">
+                        <img src="resources/img/thumb_3.jpg" />
+                    </a>
+                  </div>
                 </div>
                 <div class="detail-box" id="detail_4">
                   <h3>Terms & Conditions</h3>
@@ -386,7 +397,17 @@
               $(this).parent().siblings().children().removeClass("active");
           });
       });
-      </script>
+    </script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="vendors/js/lightgallery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery();
+        });
+    </script>
 
     </body>
 
