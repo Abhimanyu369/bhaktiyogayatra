@@ -898,18 +898,13 @@ footer p {
 
 .option-list-link {
   text-decoration: none;
-  display: block;
+  display: block!important;
   color: black;
   padding: 10px;
   background: #d1d1d1;
   border: 1px solid #000;
   border-radius: 10px;
-}
-
-.option-list-link:hover, .active {
-  text-decoration: none;
-  display: block;
-  background: #ececec;
+  margin-right: 0px!important;
 }
 
 .details {

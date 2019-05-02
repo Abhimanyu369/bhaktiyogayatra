@@ -51,10 +51,10 @@
             <div class="d_wrapper">
               <div class="d_options">
                 <ul class="option-list">
-                  <li class="option-list-item"><a class="option-list-link active" href="#detail_1">Description</a></li>
-                  <li class="option-list-item"><a class="option-list-link" href="#detail_2">Itinerary</a></li>
-                  <li class="option-list-item"><a class="option-list-link" href="#detail_3">Media</a></li>
-                  <li class="option-list-item"><a class="option-list-link" href="#detail_4">Terms & Conditions</a></li>
+                  <li class="option-list-item"><a class="btn btn-full js--scroll-to-plans option-list-link active" href="#detail_1">Description</a></li>
+                  <li class="option-list-item"><a class="btn btn-full js--scroll-to-plans option-list-link" href="#detail_2">Itinerary</a></li>
+                  <li class="option-list-item"><a class="btn btn-full js--scroll-to-plans option-list-link" href="#detail_3">Media</a></li>
+                  <li class="option-list-item"><a class="btn btn-full js--scroll-to-plans option-list-link" href="#detail_4">Terms & Conditions</a></li>
                 </ul>
               </div>
               <div class="details">
@@ -381,7 +381,7 @@
         $(document).ready(function(){
           $( "a.option-list-link" ).click(function( event ) {
               event.preventDefault();
-              $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+              $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 60 }, 500);
               $(this).addClass("active");
               $(this).parent().siblings().children().removeClass("active");
           });
