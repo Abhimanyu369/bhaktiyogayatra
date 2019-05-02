@@ -875,6 +875,7 @@ footer p {
   width: 80%;
   margin: 0 auto;
   background: #ddd;
+  border-radius: 5px;
 
   display: flex;
 }
@@ -915,16 +916,34 @@ footer p {
   width: 80%;
 }
 
-.options, .details {
+.details h3 {
+  color: inherit;
+  text-align: center;
+}
+
+.details h3:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.d_options, .details {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 
 .detail-box {
-  height: 50vh;
   background: #fff;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 30px;
   border-radius: 5px;
+}
+
+.detail-desc-text {
+  text-indent: 30px;
+  text-align: justify;
 }
